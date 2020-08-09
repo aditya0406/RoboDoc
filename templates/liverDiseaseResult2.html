@@ -1,0 +1,20 @@
+{% extends "mainlayout.html" %}
+{% block body %}
+<br><br><br><br><br><br>
+<center>
+<div id="sym_pred">
+    <br><br><br><br><br><br><br><br>
+    <h1 class="hero-title">The result of our analysis is :</h1>
+    <p>
+    	<br>
+			{{ prediction_text }}
+		<br>
+		<br>
+    </p>
+
+    <p style="color: red;">The algorithm has diagnosed you with good accuracy based on your inputs. However it might be better to talk to a doctor regardless.</p>
+    <br><br><br><br><br><br>   
+</div>
+</center>
+
+ {% endblock %}

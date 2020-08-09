@@ -1,0 +1,75 @@
+{% extends "mainlayout.html" %}
+{% block body %}
+<br><br><br><br><br><br>
+		<center>
+			<div id="sym">
+                <form action="{{ url_for('liverDiseaseResult1') }}" method="post">
+                    <br><br>
+                    <h2 class="form-signin-heading" align="center">Please Enter Your Medical Test Results</h2>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="text">Enter Mean corpuscular Volume Test Results</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" name="mcv" id="mcv" class="form-control" placeholder="Enter MCV" required autofocus name="username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Alkaline phosphatase Test Results</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" id="pass" name="alkphos" class="form-control" placeholder="Enter Alkphos" required name="username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Alamine aminotransferase Test Results</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" id="pass" name="sgpt" class="form-control" placeholder="Enter Sgpt" required name="username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Aspartate aminotransferase Test Results</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" id="pass" name="sgot" class="form-control" placeholder="Enter Sgot" required name="username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="text">Enter Gamma-glutamyl transpeptidase Test Results</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" id="pass" name="gammagt" class="form-control" placeholder="Enter Gammagt" required name="username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="text">Enter the no of half pints equivalents of alcoholic beverages drunk per day</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" id="pass" name="drinks" class="form-control" placeholder="Enter the required number" required name="username" required>
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+                        </center>
+                </form>
+    		</div>
+		</center>
+     {% endblock %}   

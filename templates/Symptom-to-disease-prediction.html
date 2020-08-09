@@ -1,0 +1,88 @@
+
+{% extends "mainlayout.html" %}
+{% block body %}
+<br><br><br><br><br><br>
+<center>
+<div id="sym">
+    <form name="SymptomForm" id="SymForm" method="POST" action=/symptom_disease_predict>
+        <div class="head">
+            Symptom Checker
+        </div>
+        <div class="form-group">
+            <label for="Symptom1" align="left">Symptom1</label>
+            <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom1"
+                   placeholder="Enter Symptom" required>
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value="{{symp}}">{{symp}}</option>
+                {% endfor %}
+            </datalist>
+
+            <label for="Symptom2" align="left">Symptom2</label>
+            <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom2"
+                   placeholder="Enter Symptom">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value="{{symp}}">{{symp}}</option>
+                {% endfor %}
+            </datalist>
+
+            <label for="Symptom3" align="left">Symptom3</label>
+            <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom3"
+                   placeholder="Enter Symptom">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value="{{symp}}">{{symp}}</option>
+                {% endfor %}
+            </datalist>
+
+            <label for="Symptom4" align="left">Symptom4</label>
+            <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom4"
+                   placeholder="Enter Symptom">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value="{{symp}}">{{symp}}</option>
+                {% endfor %}
+            </datalist>
+
+            <label for="Symptom5" align="left">Symptom5</label>
+            <input type="text" list="symp" multiple="multiple" class="form-control" name="Symptom5"
+                   placeholder="Enter Symptom">
+            <datalist id="symp">
+                {% for symp in symptoms %}
+                <option value="{{symp}}">{{symp}}</option>
+                {% endfor %}
+            </datalist>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="padding: 10px;" name=form>Check</button>
+    </form>
+</div>
+</center>
+<script>
+
+
+function openTab(tabName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(tabName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+</script>
+
+ {% endblock %}

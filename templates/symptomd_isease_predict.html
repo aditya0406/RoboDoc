@@ -1,0 +1,19 @@
+
+{% extends "mainlayout.html" %}
+{% block body %}
+<br><br><br><br><br><br>
+<center>
+<div id="sym_pred">
+    <br><br><br><br><br><br><br><br>
+    Hello , You may have
+     <h1>{{disease[0]}}</h1>
+    <br><br> 
+    Your Symptoms are <br><br><br>
+    {% for symp in symptoms %}
+        {{symp}}<br>
+    {% endfor %} 
+    <br><br><br><br><br><br>   
+</div>
+</center>
+
+ {% endblock %}

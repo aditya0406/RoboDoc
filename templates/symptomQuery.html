@@ -1,0 +1,58 @@
+{% extends "mainlayout.html" %}
+{% block body %}
+<br><br><br><br><br><br>
+		<center>
+			<div id="sym">
+                <form action="{{ url_for('covidSymptomResult') }}" method="post">
+                    <br><br>
+                    <h2 class="form-signin-heading" align="center">Please Enter Your Symptoms</h2>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                       <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="text">AGE</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" name="age" id="age" class="form-control" placeholder="Enter Age" required autofocus name="username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Gender">
+                                    <option value="010">Male</option>
+                                    <option value="100">Female</option>
+                                    <option value="001">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="text">Symptom</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" name="symptom" id="symptom" class="form-control" placeholder="Enter Your Symptom" required autofocus name="username" required>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+                        </center>
+                        <br>
+                        <br>
+                        
+                        
+                </form>
+            
+                            <p  style="color: yellow;">Your Report send to Doctor,</p>
+                            <p  style="color: yellow;">We will notify you</p>
+    		</div>
+
+		</center>
+     {% endblock %}   

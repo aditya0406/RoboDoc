@@ -1,0 +1,50 @@
+{% extends "pdfLayout.html" %}
+{% block body %}
+
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+              <a href={{ url_for('liverDisease')}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Liver-diesease-prediction</a>
+            </div>
+            <br><br>
+             <div class="banner-logo text-center">
+              <a href={{ url_for('lungDisease')}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Lungs-diesease-prediction</a>
+            </div>
+            <br><br>
+            <div class="banner-logo text-center">
+              <a href={{ url_for('heartDisease')}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Heart-diesease-prediction</a>
+            </div>
+            <br><br>
+            <div class="banner-logo text-center">
+              <a href={{ url_for('symptomToDiseasePrediction') }} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Symptom-to-disease-prediction</a>
+            </div>
+            <br><br>
+             <div class="banner-logo text-center">
+              <a href={{ url_for('malariaDisease')}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Malaria-diesease-prediction</a>
+            </div>
+            <br><br>
+            <div class="banner-logo text-center">
+              <a href={{ url_for('heartbeat') }} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">HeartBeat-Report-Generator</a>
+            </div>
+            <br><br>
+            <div class="banner-logo text-center">
+              <a href={{ url_for('diabetesDisease')}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Diabetes-diesease-prediction</a>
+            </div>
+            <br><br>
+            <div class="banner-logo text-center">
+              <a href={{ url_for('breastCancerDisease')}} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Breast-Cancer-prediction</a>
+            </div>
+            <br><br>
+            
+            <div class="banner-text text-center">
+              <h1 class="white">Healthcare at your Fingertip!!</h1>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+   
+  <!--/ contact-->
+  <!--footer-->
+  {% endblock %}

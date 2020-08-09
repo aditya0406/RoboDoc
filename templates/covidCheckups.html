@@ -1,0 +1,29 @@
+{% extends "mainlayout.html" %}
+{% block body %}
+
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+              <a href={{ url_for('covidSymptom') }} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Symptom-to-COVID-prediction</a>
+            </div>
+            <br><br>
+            <div class="banner-logo text-center">
+              <a href={{ url_for('covidXray') }} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">COVID-prediction-by-X-ray-Images</a>
+            </div>
+            <br><br>
+            <div class="banner-logo text-center">
+              <a href={{ url_for('covidCt') }} class="btn btn-primary btn-lg active" role="button" aria-pressed="true">COVID-prediction-by-CT-scan-Images</a>
+            </div>
+            <br><br>
+            <div class="banner-text text-center">
+              <h1 class="white">Healthcare at your Fingertip!!</h1>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+   
+  <!--/ contact-->
+  <!--footer-->
+  {% endblock %}

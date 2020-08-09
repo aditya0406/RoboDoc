@@ -1,0 +1,114 @@
+{% extends "mainlayout.html" %}
+{% block body %}
+<br><br><br><br><br><br>
+		<center>
+			<div id="sym">
+                <form action="{{ url_for('liverDiseaseResult2') }}" method="post">
+                    <br><br>
+                    <h2 class="form-signin-heading" align="center">Please Enter Your Medical Test Results</h2>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="text">Enter Your Age</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" name="Age" class="form-control" placeholder="Enter Age" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Enter your Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Gender">
+                                    <option value="1">Male</option>
+                                    <option value="0">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="text">Enter Total Bilirubin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <input type="text" name="Total_Bilirubin" class="form-control" placeholder="Total_Bilirubin" required autofocus >
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Direct Bilirubin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" name="Direct_Bilirubin" class="form-control"placeholder="Direct_Bilirubin" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Alkaline Phosphotase</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" name="Alkaline_Phosphotase" class="form-control"placeholder="Alkaline_Phosphotase" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Alamine Aminotransferase</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" name="Alamine_Aminotransferase" class="form-control"placeholder="Alamine_Aminotransferase" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Aspartate Aminotransferase</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" name="Aspartate_Aminotransferase" class="form-control"placeholder="Aspartate_Aminotransferase" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Total Protiens</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" name="Total_Protiens" class="form-control"placeholder="Total_Protiens" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Albumin</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" name="Albumin" class="form-control"placeholder="Albumin" required>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                               <label for="text">Enter Albumin and Globulin Ratio</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                               <input type="text" name="Albumin_and_Globulin_Ratio" class="form-control"placeholder="Albumin_and_Globulin_Ratio" required>
+                            </div>
+                        </div>
+                        <br>
+
+
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+                        </center>
+                </form>
+    		</div>
+		</center>
+     {% endblock %}   

@@ -1,0 +1,29 @@
+{% extends "mainlayout.html" %}
+{% block body %}
+
+      <div class="container">
+        <div class="row">
+          <div class="banner-info">
+            <div class="banner-logo text-center">
+              For Complete diagnosis, Please get these medical test results from your nearest hospital :
+            
+            <br><br>
+              <br>1. Mean corpuscular Volume Results
+              <br>2. Alkaline phosphatase Results
+              <br>3. Alamine aminotransferase Results
+              <br>4. Aspartate aminotransferase Results
+              <br>5. Gamma-glutamyl transpeptidase Results
+           </div>   
+          </div>
+          <br><br>
+          <center>
+             <form action="{{ url_for('liverDiseasePrediction1') }}" method="post">
+              <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+            </form>
+          </center>
+        </div>
+      </div>
+   
+  <!--/ contact-->
+  <!--footer-->
+  {% endblock %}

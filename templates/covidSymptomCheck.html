@@ -1,0 +1,171 @@
+{% extends "mainlayout.html" %}
+{% block body %}
+<br><br><br><br><br><br>
+		<center>
+            <div class="input-group-prepend">
+                                <span class="input-group-text"><h2 style="color:lightblue">ACCURACY OF MODEL : 75.08%</h2></span>
+                            </div>
+			<div id="sym">
+                <form action="{{ url_for('covidSymptomResult') }}" method="post">
+                    <br><br>
+                    <h2 class="form-signin-heading" align="center">Please Enter Your Symptoms</h2>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Fever</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Fever">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Tiredness</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Tiredness">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Dry-Cough</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Dry-Cough">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Difficulty-in-Breathing</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Difficulty-in-Breathing">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Sore-Throat</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Sore-Throat">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Pains</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Pains">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Nasal-Congestion</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Nasal-Congestion">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Runny-Nose</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Runny-Nose">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Diarrhea</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Diarrhea">
+                                    <option value="0">No</option>
+                                    <option value="1">Yes</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Age</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Age">
+                                    <option value="10000">Age_0-9</option>
+                                    <option value="01000">Age_10-19</option>
+                                    <option value="00100">Age_20-24</option>
+                                    <option value="00010">Age_25-59</option>
+                                    <option value="00001">Age_60+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Gender</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Gender">
+                                    <option value="010">Male</option>
+                                    <option value="100">Female</option>
+                                    <option value="001">Transgender</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <label for="sex">Contact With Covid Patient</label>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+                                <select class="form-control" name="Contact">
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+
+                        <br>
+                        <center>
+                            <button type="submit" class="btn btn-dark" value="submit">Submit</button>
+                        </center>
+                </form>
+    		</div>
+		</center>
+     {% endblock %}   
